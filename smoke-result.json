@@ -1,0 +1,34 @@
+{
+  "seed": "1",
+  "sourceHash": "39645b7c27299448da7b4c312cf38c2f472edbb81b01775bb7998f7b7dfc4be1",
+  "mounted": true,
+  "finished": true,
+  "finalState": {
+    "phase": "over",
+    "gel": 3,
+    "misses": 3,
+    "perfects": 0,
+    "stables": 0,
+    "score": 300000,
+    "elapsed": 14966.66666666648,
+    "y": 620.1666666666666,
+    "sway": 0,
+    "comX": 0,
+    "tolerance": 0.13,
+    "band": 0,
+    "settle": -16.666666666665808,
+    "lastError": 0,
+    "lastJudgment": "miss",
+    "serial": 3,
+    "guide": true,
+    "consecutiveFails": 3,
+    "over": true
+  },
+  "gameResult": {
+    "score": 300000,
+    "phase": 3
+  },
+  "restartVerified": true,
+  "consoleErrors": [],
+  "pageErrors": []
+}

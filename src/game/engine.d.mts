@@ -1,0 +1,20 @@
+export const STEP_MS:number
+export const TARGET_GELS:number
+export const MAX_MISSES:number
+export const CUT_MIN_Y:number
+export const CUT_MAX_Y:number
+export type Phase='falling'|'settling'|'over'
+export type Judgment='perfect'|'stable'|'miss'
+export interface CutInput{x:number;y?:number;angle:number}
+export interface CutRecord extends CutInput{y:number;gelY:number;gelX:number;masses:number[];particleSides:number[]}
+export interface GelState{phase:Phase;gel:number;misses:number;perfects:number;stables:number;score:number;elapsed:number;y:number;sway:number;comX:number;tolerance:number;band:number;settle:number;lastError:number;lastJudgment:Judgment|null;serial:number;guide:boolean;consecutiveFails:number;cut?:CutRecord}
+export function createState():GelState
+export function step(state:GelState,input?:CutInput):GelState
+export function encodedScore(s:GelState):number
+export interface VisibleParticle{x:number;y:number;weight:number;kind:'seed'|'bubble'}
+export function visibleParticleDescriptors(s:GelState):VisibleParticle[]
+export function visibleWeightedCenter(s:GelState):number
+export type ScreenParticle=VisibleParticle&{pixelX:number}
+export function screenParticlePositions(s:GelState,width:number):ScreenParticle[]
+export function visibleGelBounds(s:GelState):{left:number;right:number;top:number;bottom:number}
+export function calculateSplit(s:GelState,input:CutInput):{masses:number[];particleSides:number[];error:number}

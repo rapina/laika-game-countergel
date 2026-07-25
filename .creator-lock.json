@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 2,
+  "slug": "countergel",
+  "date": "2026-07-17",
+  "studio": {
+    "date": "2026-07-17",
+    "defaultLocales": [
+      "ko",
+      "en"
+    ],
+    "sequence": 6,
+    "slug": "countergel",
+    "title": "균형젤"
+  },
+  "manifest": {
+    "schemaVersion": 1,
+    "sequence": 6,
+    "slug": "countergel",
+    "version": "0.0.1",
+    "releaseDate": "2026-07-17",
+    "defaultLocale": "ko",
+    "supportedLocales": [
+      "ko",
+      "en"
+    ],
+    "title": {
+      "ko": "균형젤",
+      "en": "Countergel"
+    },
+    "tagline": {
+      "ko": "한 번 베어, 양쪽 무게를 맞춰라",
+      "en": "One cut. Balance both halves."
+    },
+    "description": {
+      "ko": "젤의 씨앗과 기포를 읽고 한 번의 절단으로 두 조각의 질량을 맞추는 균형 실험입니다.",
+      "en": "Read the seeds and bubbles, then balance both gel halves with a single cut."
+    },
+    "controls": {
+      "ko": "젤이 빛날 때 무게 중심을 세로로 한 번 베세요. 12개를 맞추고, 3번 무너지면 끝납니다.",
+      "en": "When the gel glows, cut vertically through its center of mass. Balance 12; three collapses end the run."
+    },
+    "orientation": "portrait",
+    "sessionSeconds": {
+      "target": 75,
+      "maximum": 120
+    },
+    "arcade": {
+      "entry": "entry.mjs",
+      "bridgeVersion": 1,
+      "assets": [
+        {
+          "source": "public/art/countergel-key.png",
+          "releasePath": "media/countergel-key.png"
+        },
+        {
+          "source": "public/fonts/Galmuri11.woff2",
+          "releasePath": "fonts/Galmuri11.woff2"
+        },
+        {
+          "source": "public/fonts/Galmuri11-Bold.woff2",
+          "releasePath": "fonts/Galmuri11-Bold.woff2"
+        },
+        {
+          "source": "public/fonts/Galmuri14.woff2",
+          "releasePath": "fonts/Galmuri14.woff2"
+        }
+      ],
+      "capabilities": [
+        "pause",
+        "resume",
+        "mute",
+        "restart",
+        "setLocale"
+      ],
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "scaling": "uniform-letterbox",
+        "orientation": "portrait"
+      }
+    },
+    "input": [
+      "pointer-swipe",
+      "keyboard"
+    ],
+    "audio": {
+      "firstGestureRequired": true,
+      "muteSupported": true
+    },
+    "accessibility": {
+      "minimumTouchTarget": 44,
+      "focusVisible": true
+    },
+    "source": {
+      "repository": "rapina/toss-game-countergel",
+      "launchpadCommit": "cf5acd8"
+    },
+    "media": {
+      "gameKeyImage": {
+        "alt": {
+          "ko": "수직 실험탑의 저울 위에서 반투명 유자색 젤 두 조각이 균형을 이루는 모습",
+          "en": "Two translucent citron gel halves balancing above a scale in a vertical experiment tower"
+        },
+        "sources": [
+          {
+            "path": "public/art/countergel-key.png",
+            "releasePath": "media/countergel-key.png",
+            "width": 1254,
+            "height": 1254,
+            "type": "image/png"
+          }
+        ]
+      },
+      "cover": "art/countergel-key.png",
+      "screenshots": [
+        "screenshots/first-screen-guide.png",
+        "screenshots/cut-perfect.png",
+        "screenshots/cut-stable.png",
+        "screenshots/cut-miss.png",
+        "screenshots/trial-over.png"
+      ]
+    }
+  },
+  "files": {
+    ".claude/settings.json": "82e6c2079d3891c0d45ca0393f1aae724c550e074e64de4f8ed6bf9fb6fb8c09",
+    ".github/workflows/ci.yml": "697742807a6fe052ed4942d89352772187d1a9251bd1ab5479b447ff1334af32",
+    ".gitignore": "be6bb79eb6d7477b8cd7267ddffb6a02c940d0dd430accaf476d448cc29e5ab1",
+    ".granite/app.json": "0fd0ad3c83fb40a9baa949942545e0ea6ba57a3f4b6607ca77d7de797bd9e181",
+    "AGENTS.md": "a94c4a6aba1f94b34eee2da3899f1efbcdbb5ad33e9755ee87673c23dc172021",
+    "CLAUDE.md": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49",
+    "GDD.md": "6832ec842ca928b987f6834b87686e1f5b38a580404f94a051f16736f6c02d34",
+    "NEW_GAME.md": "9534224380eb5d6548eb78c2e445d0f638bb018c8c09d6d48604bac93f4e7f6a",
+    "README.md": "21c3fce0ae67c6e98b4fee8759a581e2e965d93f6a5e6ad9ebfa2f8fd6881ee2",
+    "android/.gitignore": "065e4a92a240fe11a0ea230491ad9dabef143f5fd5a3e6884ad6f0395666a971",
+    "android/app/.gitignore": "99c54e51ee601a60fbde8016b2cbf717483bc2e92773be86c9247d02a7fa6ea4",
+    "android/app/build.gradle": "ada27bb008c382c09e1f16709a4b8e261d5a2cf9174992820e83cb796fbd00cc",
+    "android/app/capacitor.build.gradle": "dcabf4fc6a54b67c751e68be93706d84252d77dc167602929fcf8d6cdebeca2c",
+    "android/app/proguard-rules.pro": "1cf8c57e8f79c250b0af9c1a5a4edad71a5c348a79ab70243b6bae086c150ad2",
+    "android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java": "ff50b4c110a7434312f9af54171f9e8523b015836f707c9b387b76d4c38a97f8",
+    "android/app/src/main/AndroidManifest.xml": "97c5df4003fc6aff1705b75b4cf8c6fe94955447b04113cf2d8c4c43a934ddf8",
+    "android/app/src/main/java/com/sputnikworkshop/countergel/MainActivity.java": "90d3a82199a104e934639c825ba555428a000416d3d02f5080a09c9a2fa2ca2a",
+    "android/app/src/main/res/drawable-land-hdpi/splash.png": "08cc34ad7713fe7ed58bceaa37b2387b670c53cd60264b4bd6442db3098e75dc",
+    "android/app/src/main/res/drawable-land-mdpi/splash.png": "5cf98b4451bd99b20df26f9e608a46946118be6b0ae90762f9ca1786a30c76ff",
+    "android/app/src/main/res/drawable-land-xhdpi/splash.png": "22f87e1e3bc89aa01a7dbc39c9a4db058cd0bf4ad3fe9f55712bf69eb997f4bf",
+    "android/app/src/main/res/drawable-land-xxhdpi/splash.png": "42aa26392546fcdee1b8d3ac6d4b41bfcceb41dc6a4f3a3c30c24a8a8f4db862",
+    "android/app/src/main/res/drawable-land-xxxhdpi/splash.png": "60393ce8636fd263e4e1fea3fd4ab2de948c6295e898fda9b50ac4e5283be809",
+    "android/app/src/main/res/drawable-port-hdpi/splash.png": "c5015f4ba3628392b538386c5e210f0b94f352a3160adab934fd0311972137ca",
+    "android/app/src/main/res/drawable-port-mdpi/splash.png": "07fa579e1c83e04ba7f9cbcbfcf41b68e15fe3638f2c44a04e58b809103e6b69",
+    "android/app/src/main/res/drawable-port-xhdpi/splash.png": "b73049cb37fe76d6c11b87a796766bf6af0c85483b31eb6a921657b0d764a4b9",
+    "android/app/src/main/res/drawable-port-xxhdpi/splash.png": "0c7f1212f25b7b90e9a6e1d320013e4ff3d3e03e634cbb07b7b7981cac51627f",
+    "android/app/src/main/res/drawable-port-xxxhdpi/splash.png": "3db071a03b2f8ffe0dfd4170fc59842d53cd15bba5e88af59401d58efabf7827",
+    "android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml": "a8514094f754b099d3e55ce1d6e0b2de79db418b2eeacb0fc2a6bb0bfadef221",
+    "android/app/src/main/res/drawable/ic_launcher_background.xml": "718ba51adf166bb55c3e9936bb8199a0148457f7f0191aaa2f37a94f3159d6ec",
+    "android/app/src/main/res/drawable/splash.png": "5cf98b4451bd99b20df26f9e608a46946118be6b0ae90762f9ca1786a30c76ff",
+    "android/app/src/main/res/layout/activity_main.xml": "5d770feb791313b947020cbfc57e5c733c556dac5e9e49261a1190e527073253",
+    "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml": "9c3a7e0a6515c6e1a7ae834a9ae430311ebc3241f7b2e5e7f0460aa690709a7c",
+    "android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml": "9c3a7e0a6515c6e1a7ae834a9ae430311ebc3241f7b2e5e7f0460aa690709a7c",
+    "android/app/src/main/res/mipmap-hdpi/ic_launcher.png": "16d0f92713629b68471f7a25b00fdf055b1f121bc203893681011c2cdc9788fa",
+    "android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png": "82f129c3d6002ea79130eb191b1ea923a60d4c527edc01f1a3e93044aeb767f3",
+    "android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png": "16d0f92713629b68471f7a25b00fdf055b1f121bc203893681011c2cdc9788fa",
+    "android/app/src/main/res/mipmap-mdpi/ic_launcher.png": "9bb4d5c8436952f0f0e9e7f799e900fb14ea0cfd6b5ca126cc578160232c8bf6",
+    "android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png": "6f4a3b7c1947c0a6afcbd4e327f88563dfee8ea366ea2e92a7a4343afb6c36a0",
+    "android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png": "9bb4d5c8436952f0f0e9e7f799e900fb14ea0cfd6b5ca126cc578160232c8bf6",
+    "android/app/src/main/res/mipmap-xhdpi/ic_launcher.png": "8d67e31cd988bd450351ffc66b49b41097b8c67f916db4663f7b0d0f3087ff6a",
+    "android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png": "6eade8a04a7f6cc9f4916cc8ab05d644d37e59109ec027ac720ba4259d96185a",
+    "android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png": "8d67e31cd988bd450351ffc66b49b41097b8c67f916db4663f7b0d0f3087ff6a",
+    "android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png": "2685aec22c7f2eef2437de4026876a507bd8e0a899caf7a49905f72f719ac3c9",
+    "android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png": "22914ce65ffe22880051e6142216a12feeca70cd3f0f3dfcf09992ddbbc4e973",
+    "android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png": "2685aec22c7f2eef2437de4026876a507bd8e0a899caf7a49905f72f719ac3c9",
+    "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png": "f45dd01eacc013a1ac8b4d75ab4c24fba4651a3d5c02715bbfa2f224812da59c",
+    "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png": "ca09e197472e87da02e26e9389a0fa5f6cf19d499a46f98347f3dea2e949b76a",
+    "android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png": "f45dd01eacc013a1ac8b4d75ab4c24fba4651a3d5c02715bbfa2f224812da59c",
+    "android/app/src/main/res/values/ic_launcher_background.xml": "d80a637240092d84a76bf66fdff7a711f43fba8b25088c6d6d7ea2600aaf0df7",
+    "android/app/src/main/res/values/strings.xml": "11a80b519fb6c07636a2332f7efb3fc37844320cbec5cacecea0bf8aeb5aea4d",
+    "android/app/src/main/res/values/styles.xml": "18ebba36575e9461347ee67361b23caf095f158ee85dbefe1b83a4669ba5bd6c",
+    "android/app/src/main/res/xml/file_paths.xml": "a46ed43ef65c90cb6778f4581decf3556e3f0055aad8f36d69dae16f9a0e99aa",
+    "android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java": "d4045ae8fac1f0807e6b24eb34e68409a9a235df9d1a3f896fb8c9a49424363d",
+    "android/build.gradle": "46ade7db7afeb8049ccea59fce83095dca736ceb8c9acd79cc944e988c3357d9",
+    "android/capacitor.settings.gradle": "f48ff04e04511f1410c4d08caf297b23ff072c63c9aa1be59dbe4e3b7d621994",
+    "android/gradle.properties": "3bab15c5b8bc4c2f4b6cf525497d15ad4abca53a460e6dd2eb0f0135817d31e6",
+    "android/gradle/wrapper/gradle-wrapper.jar": "7d3a4ac4de1c32b59bc6a4eb8ecb8e612ccd0cf1ae1e99f66902da64df296172",
+    "android/gradle/wrapper/gradle-wrapper.properties": "9a479a85aa879bb55284fc16d0de5b81a745c3854f4e2d88c42e7debaf007435",
+    "android/gradlew": "b187b4c52e749f5760afdd6fadc31b2a98ad35fb249bf0dff03b72650f320409",
+    "android/gradlew.bat": "94102713eb8fb22d032397924c0f38ab2da783ba60d07054339f1190a0c4e2cd",
+    "android/settings.gradle": "6ce098d15ebd69b44c4ecd786bca1bdc366340d2459b2af4d7bb0ab317aa9669",
+    "android/variables.gradle": "83d502c9ed8fcf1dd4791482067abeedbebae49fafe9cd14a8a1f5891deb0d88",
+    "art/prompts/countergel-key.md": "a545a9e344380411d9edea4a72dc76e712548cf0e214600b1aa7b7d8ecf9d833",
+    "art/provenance/countergel-key.json": "f777f66fbefd4ed49a49a9211c6ded799a36f352f97f22e2b58a0361c0f0f6a8",
+    "art/source/countergel-key.png": "152e35455abf3905e34aac699f923f89feadd6bb31a52cfe36fd1bed86cf29c7",
+    "autoplay.html": "58e51f9bded0bde8630c23be5425649a2febb8972e93ea5fed209d9bbb9e2c40",
+    "capacitor.config.ts": "18817ac4d6fcba8b78feb2e1ec700da41c5febf0ed04c8e600336b73d4063e6d",
+    "granite.config.ts": "a94bded6478dff9305339a92afd04cc6567346d5faa243f4f976313b47799133",
+    "index.html": "b301ba1fdcfc6d4a35d7eceaa61235ccc9deeb27fe103e8afc6b784e822e5f46",
+    "package-lock.json": "be256e87604c51b25764bf6e501a841c001b4319e0d9489e8ee176ee44b5fd8e",
+    "package.json": "ad0c657c536d501ac99a99f6d085bc2fdc3314adfef4b00ec08aaa5ed642bbde",
+    "public/apple-touch-icon.png": "90e02ecaa95d5fed4c78d759acb26a77fedfd27e6c2431ce8b336f1023d498c9",
+    "public/art/countergel-key.png": "152e35455abf3905e34aac699f923f89feadd6bb31a52cfe36fd1bed86cf29c7",
+    "public/audio/game.mp3": "c5295c16b2871671ce0065d4c1c0dc711e29793073c07379c3de83a70b879c23",
+    "public/audio/title.mp3": "737039be685a7bdde29ae1b178be60ce7d65987d342a0b76eccae7b065c4caef",
+    "public/favicon-16.png": "43e58d6d6f0ff07a45d10c322ffff93c596a9542c45bd48e9dd827ca8c341841",
+    "public/favicon-32.png": "0518c759e34d747049e56af10e489df792b827645d176a3b72b37c4440f5da01",
+    "public/fonts/Galmuri11-Bold.woff2": "03edc70cfacc32ec4d5d356ca2dbd9ff3fea92d08d6924eb8ace3b8b42336cb6",
+    "public/fonts/Galmuri11.woff2": "bb5655930587f2e3a2eb943afff42e39d9dc489a58df45a5fd524a9fd2178e90",
+    "public/fonts/Galmuri14.woff2": "3f424e1abd853e0d2e1e2a59f83e171a8d88ed1a7902a9c0d5bb27c69ee946cd",
+    "public/icon-192.png": "319ecf67742ab3f4f94d3b869e647e772ceaf0669e19fb7c03f0bb3e6c7f0867",
+    "public/icon-512.png": "3939ca3b8e38f607d9ccd06e6e2ae7864993f524553f553bcb9e2c13bca13110",
+    "screenshots/cut-feedback.png": "f51387fb192096b98c8994b8685ce71439abcd0f2c4603a66603920a433d0542",
+    "screenshots/cut-miss.png": "9a6a9ecd5e3c8f46d93d61d862edd4f30bd50a3d859a710d4af0c54194643066",
+    "screenshots/cut-perfect.png": "68d926ed192b9185b5376c733212cc3d3db3a6e87d1644aace068e47a1c08a52",
+    "screenshots/cut-stable.png": "f3298d613a3e3be2e5c41c5dd7f1a64133f5ded2f04aa80ab66b8ba5d353ca5d",
+    "screenshots/first-screen-guide.png": "345abc536a995c0281bfb883825bf95e56db8f86141896c4c0024966c8d77bc1",
+    "screenshots/title-360x800.png": "b6d29eb491533c9828908608876af234b7da031f20e1b71e08c251fffaaec9b4",
+    "screenshots/title-390x844.png": "50ca12e1584f20ca0fc96b772bc80934a268e8b0f6924cf2cccd1b0080ad1e47",
+    "screenshots/title-430x932.png": "42e483ffa7c53660843dc7996ae8b950ab03136ebd418aa80019766001630567",
+    "screenshots/title-900x760.png": "995300fb902f314d0004588883c9d02eeb6c776fd8ad1e1160df6c3d70bc8ae3",
+    "screenshots/trial-over.png": "ea91a698717f2dbfe673f17457370fdf461c628c09d2f27e970651ee8a0f11c1",
+    "scripts/android-gradle.js": "61d7d45ca36abd716daafb14de63c6277a96c7579baf876cd0870f563960a697",
+    "scripts/build-release.mjs": "40effaeb8bfa79b08703b7dd59b957765d139a0a8d36ae5d7e0907656be7c01a",
+    "scripts/bump-version.js": "447ac39caf9b460a0a7a3ff390742ed4ee5d656d4b0cc1f811916b2ba5159adf",
+    "scripts/gen_app_icon.py": "e72fe312671e35d6412402fa27d848454184250dcbfb665db3403e7f30c7f182",
+    "scripts/new-game.js": "b62bba1852ac7950febf2de156949d5e1bba5877ce843c433850672534881a47",
+    "scripts/playability-sim.mjs": "134c17302c8614229aa6b2b54473c770f600bd9d50ec5e7162b0cd44670fb8a1",
+    "scripts/smoke.mjs": "8af0d6e7150dc860b65780881891bf35978c19067960e397abc21eb6e5ee86e0",
+    "scripts/test-gate.mjs": "80a4405893447b1b6bda4859fa0b7a5503a78c57c1fe20c1a0a8516acf3f05d7",
+    "scripts/verify-release.mjs": "9546086fa94efd3726ff145fbd4de538654f3f09b8c8aeb100e25cde48ed7866",
+    "scripts/viewport-smoke.mjs": "aa1424b359118275da60c52672f26a767ce48aae5a028dea4fe35e2e446b08f0",
+    "smoke-result.json": "8d1bf0bb20d9cb273d4806b8531174e1ac12482c9157093e97fed4cfd37bc470",
+    "smoke.png": "fab38d9da4c664a922e8fd9500b507b6dbc8bdd6b9f9b3879501c061402e137b",
+    "src/App.tsx": "382ccba598a37ae4cb3711aa930e1fafafb782deb44df5a674523f9444528ba9",
+    "src/ads/ADS.md": "7c9369e75c5247ee7796bf6d3d14bcd60e2cf56fa6f6622fd153505d1c4d42a1",
+    "src/ads/constants.ts": "a68eace51a19a04124391a1e9cea462598dee14d286584b98670b6a2785b9199",
+    "src/ads/defaultAd.ts": "0bd88def2e7f5dde28be65e5eb1533f5b45fda288a1057a65ae2edae72d101e3",
+    "src/ads/index.ts": "01fb9d581990b19c2d1f3bbf247e400fc8bcd13503b0fabdedad9d3026309980",
+    "src/ads/tossAd.ts": "c304f3fe5a2737b14188137dbc7a7f0f020ef0d7db64bbaeb7814c723ee342cd",
+    "src/ads/types.ts": "68a360751767d75da175672e1401474e1ce4d515542047925d9dcac8555ba7cd",
+    "src/ads/webAd.ts": "40d878ba8ba67da080d1f4ba206ec4d517700c3efa2a0c9c246e3a34e3fddf40",
+    "src/appConfig.ts": "516d3c59d78d7e1ec8ce83dfc6fd3ea33063c4cc1abd3b0b752c7ea3fad03949",
+    "src/arcadeEntry.ts": "b35d6e18d4f828d1479dc834d9ce886fb199681165a8bf8821fcab8735ffee5e",
+    "src/audio/BGMManager.ts": "197dcf8a0544fc393b9e883c2ff4b81011522954cf19bae9e9a856bcd354864b",
+    "src/audio/SFXManager.ts": "d1d8b84694858687adfa9a6e3b543b83b44fe32c1fd08c5ae78f8bd19a288beb",
+    "src/audio/SFXSynth.ts": "c61837a7fd988ed33e1f953dd9c409bfe1992210b8bdb55fd16eced36b34065e",
+    "src/audio/audioSettings.ts": "d278e6e45c79e3465893a76323baed5b118ab21b38c45a0075409235ce0c333c",
+    "src/audio/bgmConfig.ts": "55ed9f9bc3305244a09dfe89d3159b4c1f1d5d41935352ea3eb3aed6ad4428ab",
+    "src/autoplay.tsx": "85757053d845ad9bb611c03adaf868fb4a4bd8b202ad2b478dbe8aa7c3cc7b3d",
+    "src/components/AdBanner.tsx": "a28fbee7b550e766fdae595b690310a1d4ec561d53b41a24073c14f617ceb742",
+    "src/components/GameScreen.tsx": "2b7e7e25397a30ed47241c21199ed06a297b4e9c047ec6609d462fa4b8f3eedc",
+    "src/components/MobileFrame.tsx": "2eeb7ee6b1ab3e1f566d735992c97c7b3015e740ef5333c517816f53cafd0834",
+    "src/components/Modal.tsx": "93378499480f371d6f52832406c06120c5a2f44e4ac031b0e8acda8584b2bd77",
+    "src/game/CountergelGame.ts": "ff2eeeb58a1177ac48d0dc7649bd8e2be856edd0b2682922bd85c1757991ab53",
+    "src/game/engine.d.mts": "2e26828df404c262e0efc96d5a22378e9e76a728a015cf6c537350ede5b6387a",
+    "src/game/engine.mjs": "0fd40d9b4f00988c0f57a30871277c725612d377b8f6b27e7c827c6acb792012",
+    "src/game/engine.test.ts": "fee05f9cca0eeb2fb7c69ca7c4b08329b44fff616a4dcfe044fef901e395f651",
+    "src/game/logicRng.test.ts": "6f9a1ed18b1927a6f253192da4848fdb71c72f91f66fdfb93fd9527086133129",
+    "src/game/logicRng.ts": "b7d809b52063dfb8573b8b1ea5ea70032d9d68babc893e1b2f76bc702eeeec5b",
+    "src/game/records.test.ts": "8d888871279e48979af4e97a6278175a7b66d313f24f5484c34b6a60263aa02f",
+    "src/game/records.ts": "b1ec14e125357b29a222ac364c123db5e91ad184e6e0040eac037f98116ae3a7",
+    "src/game/types.ts": "751c34725f993e3132362161c972ebc75e838b318339b52ebc8e4609a24001a6",
+    "src/hooks/useBGM.ts": "31d15662e4e243d4595790eaef9b2193b17960e94098b797014a3733578a2907",
+    "src/hooks/useTypewriter.ts": "69511aa2870fd01583b9f440ef67a660c6ccd695f01ce1194c32a4ab99f8d6ad",
+    "src/i18n/index.ts": "075874c7c1c722399cfaeda2cf417ce40fb890c266665fde3b793b94fa027c45",
+    "src/i18n/translations.test.ts": "652120a0718a1ebe0efffb0c00a6221f3cb1e2f2daf39ff701f66e4fde3faafc",
+    "src/i18n/translations.ts": "acf118d9601e2a53c0ac1753a3c3ed2eb1883191c44b1f1ecd0e4d8c11a68d9b",
+    "src/iap/constants.ts": "ed9bcd13a939997bb97b0be30476afd66575f9de414e1fc7d4e64184e63173fb",
+    "src/iap/defaultIap.ts": "477694577140aa18f5d6a38b06a88be97b34ac3da0b639c8f5cfec66cf98ce68",
+    "src/iap/entitlements.ts": "e1392ea134acc00735c432bee6aca2efe2718cebff101a8686e6ef4283fdb777",
+    "src/iap/index.ts": "df8cb0108e8ddf82746b8c07e8eed8b9c01246939dc5a2c3b5398b93cc3cdf34",
+    "src/iap/tossIap.ts": "a021d782dbd7fab3e19c064ad9284f9a66197fd77dc01032cd6f1f7ac67276db",
+    "src/iap/types.ts": "bf7ac8aa738b947b4305d74b0f037d86ccca956d4b7ae0a616febb33b76699c6",
+    "src/iap/useEntitlement.ts": "9ef238cc9d5c8deebe8df1d5426971b86d651437b01e42bceba09370b0f1ab76",
+    "src/index.css": "3f936c3a4da87c32dfff7ce3efe1d96c9a62a3aae199bb104b1000eae767b211",
+    "src/main.tsx": "d40c4ecec02b74e1f727d87ff0727d090df440bc37fccedf67d9195a2c392ade",
+    "src/platform/defaultAdapter.ts": "33bdf2cf8051a72f74338d87e634c46e19aa432e3e52b83c7fdc47e24d83e19e",
+    "src/platform/index.ts": "a9336b2e1b4785e652208c62fe5694802df937fef5310cffd29374583d21c1f9",
+    "src/platform/tossAdapter.ts": "f44a623311405f61bd12d076241395a340afa2f16719d2f0f45ed70efc536e3f",
+    "src/platform/types.ts": "c7e96cb33e1acc7644d2876c0dabc85ac61b09398d04afc3d8fd0c99c8d8c527",
+    "src/screens/RankingScreen.tsx": "f52bbed03f037fc121f6589aaa0aa1832c14d5eabad0bd5514172bc2859d0987",
+    "src/screens/TitleScreen.tsx": "00c09935a273f2de5e96fa8aff7cc493ad540d5f2954527bb623e73577a188dd",
+    "src/test/setup.ts": "df60153a6d086a0f1febdfe1e3bd749e43692f07a19905de952e2e7b153c362a",
+    "src/utils/shareScreenshot.ts": "1f1e81adc7cef403707fe9898080cbd0640ea3f3d99e9bb5f62d5d1c25258207",
+    "src/vite-env.d.ts": "2d5f1a5cc59c066ef37f4bb39a40040193c483a7bb0a7e8bb4f08372a6c65e32",
+    "tsconfig.app.json": "ea3a7d06ce5140d22b347c5e69b3ec4bdaa0352785553e705b9739b9dde1dc1c",
+    "tsconfig.json": "770b4140bbb581e2dfd9ea9946ffc9c75a1d86ba7d2db5f77c83e37cbdf9d808",
+    "tsconfig.node.json": "3ced5d22ba9e246c839a695526296a8d067fbe9db838d728516d2eac9215b333",
+    "vite.config.ts": "c645fb735afddfb2ca68aaec89c8fee25d32ec7ea202e045b7eb0aa57a72b1a1",
+    "vitest.config.ts": "539506e625a9fc7407c7eb2a8322a0d7445e5d00ebb8d547fa600d67e307b431"
+  },
+  "artPrefix": {
+    "bytes": 2522,
+    "sha256": "12005f902fae302892c4c6e8b82846b7a92e84d8d9c191559331b2ff13f2b5df"
+  },
+  "dayPrefix": {
+    "bytes": 3499,
+    "sha256": "cf61a28c06ffe4c00d785ab215dbaa93dbd54ddb436555148166eb316decb90c"
+  },
+  "publicIdentity": {
+    "studio": "Sputnik Workshop",
+    "maker": "Laika",
+    "laikaBaseId": "laika-base-v1",
+    "laikaBaseSha256": "820e6d43e915c4e9e32ddcd3cc14d0f2537d99f6d8d397bbd40fc416137a6712"
+  }
+}

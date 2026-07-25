@@ -1,0 +1,3 @@
+# Laika maker illustration prompt
+
+Use `laika-base-v1` as a strict identity reference. Preserve Laika's small natural canine body, pointed ears, narrow white forehead blaze, dark eye patches, white chest and front paws, cream X harness, orange connector, riveted capsule, Earth porthole, analog instruments, and coarse black/dirty-white/oxidized-orange screen-print texture. Change only the daily tool and action: one natural front paw draws a short diagonal cut across translucent citron gel above a balance scale. Show two nearly equal halves with dark seeds and bubbles. Keep a 3:2 safe crop. No text, logos, human hands, extra limbs, malformed paws, or contemporary UI.

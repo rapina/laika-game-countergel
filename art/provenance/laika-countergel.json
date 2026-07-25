@@ -1,0 +1,13 @@
+{
+  "tool": "OpenAI Codex image_gen",
+  "date": "2026-07-17",
+  "baseId": "laika-base-v1",
+  "baseSha256": "820e6d43e915c4e9e32ddcd3cc14d0f2537d99f6d8d397bbd40fc416137a6712",
+  "source": { "path": "art/source/laika-countergel.png", "width": 1536, "height": 1024, "sha256": "2ee7fc931e4e2104eeb07c74017fe55adf0b2b6054abcfb9dba32630708dca86" },
+  "derivatives": [
+    { "path": "public/art/laika-countergel-640.jpg", "width": 640, "height": 426, "sha256": "e6e1dc09158db51c1e90d8dd78a4bf27ee03f73ec475b22c9181ad91577519db" },
+    { "path": "public/art/laika-countergel-1280.jpg", "width": 1280, "height": 853, "sha256": "a46163561d9d064938e01c888f5875d63d17b39109364ab3fc8ede1df2b74d23" }
+  ],
+  "review": { "faceAndEars": "pass", "harnessAndConnector": "pass", "naturalCanineSkeletonAndPaws": "pass", "extraLimbs": "none", "generatedText": "none", "mobileCrop": "pass" },
+  "promptFile": "art/prompts/laika-countergel.md"
+}

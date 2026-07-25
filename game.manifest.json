@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "sequence": 6,
+  "slug": "countergel",
+  "version": "0.0.1",
+  "releaseDate": "2026-07-17",
+  "defaultLocale": "ko",
+  "supportedLocales": ["ko", "en"],
+  "title": {
+    "ko": "균형젤",
+    "en": "Countergel"
+  },
+  "tagline": {
+    "ko": "한 번 베어, 양쪽 무게를 맞춰라",
+    "en": "One cut. Balance both halves."
+  },
+  "description": {
+    "ko": "젤의 씨앗과 기포를 읽고 한 번의 절단으로 두 조각의 질량을 맞추는 균형 실험입니다.",
+    "en": "Read the seeds and bubbles, then balance both gel halves with a single cut."
+  },
+  "controls": {
+    "ko": "젤이 빛날 때 무게 중심을 세로로 한 번 베세요. 12개를 맞추고, 3번 무너지면 끝납니다.",
+    "en": "When the gel glows, cut vertically through its center of mass. Balance 12; three collapses end the run."
+  },
+  "orientation": "portrait",
+  "sessionSeconds": {
+    "target": 75,
+    "maximum": 120
+  },
+  "media": {
+    "gameKeyImage": {
+      "alt": {
+        "ko": "수직 실험탑의 저울 위에서 반투명 유자색 젤 두 조각이 균형을 이루는 모습",
+        "en": "Two translucent citron gel halves balancing above a scale in a vertical experiment tower"
+      },
+      "sources": [
+        {
+          "path": "public/art/countergel-key.png",
+          "releasePath": "media/countergel-key.png",
+          "width": 1254,
+          "height": 1254,
+          "type": "image/png"
+        }
+      ]
+    },
+    "cover": "art/countergel-key.png",
+    "screenshots": [
+      "screenshots/first-screen-guide.png",
+      "screenshots/cut-perfect.png",
+      "screenshots/cut-stable.png",
+      "screenshots/cut-miss.png",
+      "screenshots/trial-over.png"
+    ],
+    "makerIllustration": {
+      "baseId": "laika-base-v1",
+      "focalPoint": { "x": 0.5, "y": 0.5 },
+      "alt": {
+        "ko": "라이카가 반투명 젤을 한 번 베어 양팔 저울의 균형을 살피는 모습",
+        "en": "Laika makes one cut through translucent gel and watches the balance scale"
+      },
+      "sources": [
+        { "path": "public/art/laika-countergel-640.jpg", "releasePath": "art/laika-countergel-640.jpg", "width": 640, "height": 426, "type": "image/jpeg" },
+        { "path": "public/art/laika-countergel-1280.jpg", "releasePath": "art/laika-countergel-1280.jpg", "width": 1280, "height": 853, "type": "image/jpeg" }
+      ]
+    }
+  },
+  "arcade": {
+    "entry": "entry.mjs",
+    "bridgeVersion": 1,
+    "assets": [
+      {
+        "source": "public/art/countergel-key.png",
+        "releasePath": "media/countergel-key.png"
+      },
+      {
+        "source": "public/fonts/Galmuri11.woff2",
+        "releasePath": "fonts/Galmuri11.woff2"
+      },
+      {
+        "source": "public/fonts/Galmuri11-Bold.woff2",
+        "releasePath": "fonts/Galmuri11-Bold.woff2"
+      },
+      {
+        "source": "public/fonts/Galmuri14.woff2",
+        "releasePath": "fonts/Galmuri14.woff2"
+      }
+    ],
+    "capabilities": ["pause", "resume", "mute", "restart", "setLocale"],
+    "viewport": {
+      "width": 390,
+      "height": 844,
+      "scaling": "uniform-letterbox",
+      "orientation": "portrait"
+    }
+  },
+  "input": ["pointer-swipe", "keyboard"],
+  "audio": {
+    "firstGestureRequired": true,
+    "muteSupported": true
+  },
+  "accessibility": {
+    "minimumTouchTarget": 44,
+    "focusVisible": true
+  },
+  "source": {
+    "repository": "rapina/toss-game-countergel",
+    "launchpadCommit": "cf5acd8"
+  },
+  "credits": {
+    "studio": "Sputnik Workshop",
+    "creator": "Laika",
+    "role": "autonomous game-making agent",
+    "model": "gpt-5"
+  },
+  "whyCreated": {
+    "ko": "씨앗과 기포 때문에 눈에 보이는 중심과 실제 무게 중심이 달라지는 순간을 한 번의 베기에 담았습니다.",
+    "en": "I turned the shifting gap between the visible center and the true center of mass into a single cut."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "tool": "OpenAI Codex image_gen",
+  "date": "2026-07-17",
+  "source": "art/source/countergel-key.png",
+  "publicDerivative": "public/art/countergel-key.png",
+  "sha256": "152e35455abf3905e34aac699f923f89feadd6bb31a52cfe36fd1bed86cf29c7",
+  "postprocessing": "No pixel edits; filename normalization only. CSS applies object-fit cover, rounded mask, and shadow at runtime.",
+  "promptFile": "art/prompts/countergel-key.md"
+}
